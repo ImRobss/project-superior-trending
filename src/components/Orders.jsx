@@ -14,9 +14,9 @@ export default function Orders() {
         <h1 className="rosa mb-6 md:mb-4">Pedidos</h1>
       </div>
 
-      <div className="/* NOTEBOOK */ grid grid-cols-1 items-start justify-center gap-10 px-0 pt-10 md:grid-cols-2 md:items-center md:gap-4 md:px-20 md:pt-20 lg:gap-10 lg:px-10 lg:pt-16">
+      <div className="grid grid-cols-1 items-start justify-center gap-10 px-0 pt-10 md:grid-cols-2 md:items-center md:gap-4 md:px-20 md:pt-20 lg:gap-10 lg:px-10 lg:pt-16">
         {/* Left card */}
-        <div className="bg-rosa /* NOTEBOOK */ mx-auto flex h-[300px] w-full max-w-[500px] flex-col items-center justify-center rounded-lg px-8 py-6 shadow-2xl md:px-10 lg:h-[290px] lg:max-w-[460px]">
+        <div className="bg-rosa mx-auto flex h-[300px] w-full max-w-[500px] flex-col items-center justify-center rounded-lg px-8 py-6 shadow-2xl md:px-10 lg:h-[290px] lg:max-w-[460px]">
           <h3 className="mb-5 text-center text-white">
             monto mínimo de compra:
           </h3>
@@ -27,8 +27,8 @@ export default function Orders() {
         </div>
 
         {/* Right column */}
-        <div className="/* NOTEBOOK */ flex w-full flex-col items-center justify-center gap-6 px-0 py-0 md:gap-8 md:px-10 md:py-6 lg:items-start lg:px-0">
-          <div className="border-rosa /* NOTEBOOK */ flex h-auto w-full max-w-[500px] items-start justify-center gap-4 rounded-lg border-3 px-5 py-6 md:h-[100px] md:items-center lg:max-w-[460px] lg:justify-start">
+        <div className="flex w-full flex-col items-center justify-center gap-6 px-0 py-0 md:gap-8 md:px-10 md:py-6 lg:items-start lg:px-0">
+          <div className="border-rosa flex h-auto w-full max-w-[500px] items-start justify-center gap-4 rounded-lg border-3 px-5 py-6 md:h-[100px] md:items-center lg:max-w-[460px] lg:justify-start">
             <PackageIcon
               weight="regular"
               className="rosa h-10 w-10 shrink-0 md:h-15 md:w-15"
@@ -38,7 +38,7 @@ export default function Orders() {
             </h3>
           </div>
 
-          <div className="/* NOTEBOOK */ flex h-auto w-full max-w-[530px] items-start justify-center gap-4 px-5 py-6 md:h-[100px] md:items-center lg:max-w-[460px] lg:justify-start">
+          <div className="flex h-auto w-full max-w-[530px] items-start justify-center gap-4 px-5 py-6 md:h-[100px] md:items-center lg:max-w-[460px] lg:justify-start">
             <SealPercentIcon
               weight="regular"
               className="rosa h-10 w-10 shrink-0 md:h-15 md:w-15"
