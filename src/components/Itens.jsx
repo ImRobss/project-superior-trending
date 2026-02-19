@@ -1,56 +1,37 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
 import Card from "./ui/Card";
 import PawsBackground from "./ui/PawsBackground";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Itens() {
   const sectionRef = useRef(null);
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
 
-  useLayoutEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
 
-    const ctx = gsap.context(() => {
-      const title = el.querySelector("[data-itens-title]");
-      const cards = el.querySelectorAll("[data-itens-card]");
+          entry.target.classList.add("itens-reveal--show");
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        threshold: 0.4,
+      },
+    );
 
-      gsap.set(title, { autoAlpha: 0, y: 16 });
-      gsap.set(cards, { autoAlpha: 0, y: 22, scale: 0.985 });
+    const cards = section.querySelectorAll("[data-itens-card]");
+    cards.forEach((card, index) => {
+      card.classList.add("itens-reveal");
+      card.style.transitionDelay = `${index * 120}ms`;
+      observer.observe(card);
+    });
 
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: el,
-            start: "top 70%",
-            once: true,
-          },
-        })
-        .to(title, {
-          autoAlpha: 1,
-          y: 0,
-          duration: 0.5,
-          ease: "power2.out",
-        })
-        .to(
-          cards,
-          {
-            autoAlpha: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.65,
-            ease: "power3.out",
-            stagger: 0.12,
-          },
-          "-=0.15",
-        );
-    }, el);
-
-    return () => ctx.revert();
+    return () => observer.disconnect();
   }, []);
 
   return (
