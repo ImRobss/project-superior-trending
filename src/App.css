@@ -7,6 +7,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Questrial", sans-serif;
 }
@@ -57,4 +61,8 @@ p {
 
 .bg-rosa {
   @apply bg-[#F3AFA6];
+}
+
+.border-rosa {
+  @apply border-[#F3AFA6];
 }
