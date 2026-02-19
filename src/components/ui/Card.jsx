@@ -1,8 +1,8 @@
 export default function Card({ title, description }) {
   return (
-    <div className="h-auto w-[500px] bg-white p-4 rounded-lg shadow-lg">
+    <div className="h-[365px] w-[500px] bg-white p-4 rounded-lg shadow-lg">
       <img
-        src="/images/logo.jpg"
+        src="/images/logo.png"
         alt={title}
         className="w-full h-auto object-cover mb-4"
       />
