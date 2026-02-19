@@ -1,6 +1,6 @@
 export default function Card({ title, description }) {
   return (
-    <div
+    <article
       className="
         w-full max-w-[500px]
         min-h-[320px] md:min-h-[365px]
@@ -68,6 +68,6 @@ export default function Card({ title, description }) {
           {description}
         </p>
       </div>
-    </div>
+    </article>
   );
 }

@@ -1,24 +1,11 @@
 export default function Footer() {
   return (
     <footer className="w-full">
-      <div
-        className="
-        bg-[#141414]
-        text-white
-        
-        /* MOBILE (padrão) */
-        flex flex-col items-center gap-4
-        text-center px-6 py-6
-
-        /* DESKTOP (igual ao seu atual) */
-        md:flex-row md:justify-between md:items-center
-        md:text-center md:px-80 md:py-4
-        "
-      >
+      <div className="flex flex-col items-center gap-4 bg-[#141414] px-6 py-6 text-center text-white md:flex-row md:items-center md:justify-between md:px-80 md:py-4 md:text-center">
         <img
           src="/images/logo.png"
           alt="Logo"
-          className="w-28 md:w-30 h-auto brightness-0 invert"
+          className="h-auto w-28 brightness-0 invert md:w-30"
         />
 
         <p className="text-sm md:text-base">

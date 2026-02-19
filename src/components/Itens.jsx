@@ -35,24 +35,20 @@ export default function Itens() {
   }, []);
 
   return (
-    <main
+    <section
       ref={sectionRef}
-      className="
-        bg-roxo min-h-screen relative overflow-hidden
-        px-6 py-16
-        md:px-40 md:py-20
-      "
+      className="bg-roxo relative min-h-screen overflow-hidden px-6 py-16 md:px-40 md:py-20"
     >
       <PawsBackground />
 
       <div className="relative z-10">
-        <div className="flex justify-center mb-10">
+        <div className="mb-10 flex justify-center">
           <h1 data-itens-title className="text-white">
             Trabajamos con
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
           <div data-itens-card>
             <Card
               title="Alimentos Premium"
@@ -75,13 +71,7 @@ export default function Itens() {
           </div>
         </div>
 
-        <div
-          className="
-            flex justify-center gap-6 mt-6
-            flex-col items-center
-            md:flex-row md:items-stretch md:gap-8 md:mt-8
-          "
-        >
+        <div className="mt-6 flex flex-col items-center justify-center gap-6 md:mt-8 md:flex-row md:items-stretch md:gap-8">
           <div data-itens-card className="w-full md:w-auto">
             <Card
               title="Accesorios"
@@ -97,6 +87,6 @@ export default function Itens() {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 }

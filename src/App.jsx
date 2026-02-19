@@ -26,12 +26,12 @@ function App() {
     };
   }, []);
   return (
-    <>
+    <main>
       <Hero />
       <Itens />
       <Orders />
       <Footer />
-    </>
+    </main>
   );
 }
 
