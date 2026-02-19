@@ -10,13 +10,13 @@ export default function Hero() {
       <div className="grid grid-cols-2 relative z-10">
         <div className="items-center justify-center">
           <img
-            src="/images/logo.jpg"
+            src="/images/logo.png"
             alt="Logo"
             className="w-[600px] h-auto mb-4"
           />
-          <h3 className="text-black mb-2">
+          <h2 className="text-black mb-2">
             Todo lo que tu cliente busca para su mascota, en un solo proveedor.
-          </h3>
+          </h2>
           <p className="text-black">
             Alimentos premium, juguetes, higiene y accesorios importados,
             disponibles para entrega rápida. <br /> Con base en Paraguay,
@@ -24,11 +24,14 @@ export default function Hero() {
             y reposición constante.
           </p>
         </div>
+        <div className="flex items-center justify-center">
+          <div className="bg-black h-[300px] w-[500px] rounded-2xl"></div>
+        </div>
       </div>
       <img
         src="/images/dog.png"
         alt="Hero Image"
-        className="absolute w-[1000px] h-auto opacity-5 md:-right-20 z-0"
+        className="absolute w-[1200px] h-auto opacity-5 md:-right-20 z-0"
       />
     </main>
   );
