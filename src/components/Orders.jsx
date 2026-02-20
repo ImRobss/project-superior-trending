@@ -26,7 +26,6 @@ export default function Orders() {
           </h3>
         </div>
 
-        {/* Right column */}
         <div className="flex w-full flex-col items-center justify-center gap-6 px-0 py-0 md:gap-8 md:px-10 md:py-6 lg:items-start lg:px-0">
           <div className="border-rosa flex h-auto w-full max-w-[500px] items-start justify-center gap-4 rounded-lg border-3 px-5 py-6 md:h-[100px] md:items-center lg:max-w-[460px] lg:justify-start">
             <PackageIcon

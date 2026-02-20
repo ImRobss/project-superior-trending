@@ -37,7 +37,7 @@ export default function Itens() {
   return (
     <section
       ref={sectionRef}
-      className="bg-roxo relative min-h-screen overflow-hidden px-6 py-16 md:px-40 md:py-20"
+      className="bg-roxo relative min-h-screen overflow-hidden px-6 py-16 md:px-40 md:py-25"
     >
       <PawsBackground />
 
@@ -52,7 +52,7 @@ export default function Itens() {
           <div data-itens-card>
             <Card
               title="Alimentos Premium"
-              description="Raciones super premium para perros y gatos con alta aceptación del cliente final. Más calidad, más confianza y reposición constante para que nunca pierdas una venta por falta de stock."
+              description="Alta aceptación inmediata en perros y gatos. Producto confiable, rotación rápida y reposición constante para que tu tienda nunca pierda una venta."
             />
           </div>
 
