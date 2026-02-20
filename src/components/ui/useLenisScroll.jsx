@@ -6,7 +6,6 @@ export function useLenisScroll() {
   const lenisRef = useRef(null);
 
   useEffect(() => {
-    // Respeita usuários com "reduzir movimento"
     const prefersReducedMotion = window.matchMedia?.(
       "(prefers-reduced-motion: reduce)",
     )?.matches;
