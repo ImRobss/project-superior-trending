@@ -15,7 +15,6 @@ export default function Orders() {
       </div>
 
       <div className="grid grid-cols-1 items-start justify-center gap-10 px-0 pt-10 md:grid-cols-2 md:items-center md:gap-4 md:px-20 md:pt-20 lg:gap-10 lg:px-10 lg:pt-16">
-        {/* Left card */}
         <div className="bg-rosa mx-auto flex h-[300px] w-full max-w-[500px] flex-col items-center justify-center rounded-lg px-8 py-6 shadow-2xl md:px-10 lg:h-[290px] lg:max-w-[460px]">
           <h3 className="mb-5 text-center text-white">
             monto mínimo de compra:

@@ -51,6 +51,7 @@ export default function Itens() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
           <div data-itens-card>
             <Card
+              src="/images/racao.png"
               title="Alimentos Premium"
               description="Alta aceptación inmediata en perros y gatos. Producto confiable, rotación rápida y reposición constante para que tu tienda nunca pierda una venta."
             />
@@ -58,6 +59,7 @@ export default function Itens() {
 
           <div data-itens-card>
             <Card
+              src="/images/snack.webp"
               title="Snacks y Húmedos"
               description="Galletas, bifinhos y alimentos húmedos de compra impulsiva. El cliente entra por la ración… pero la ganancia real está en el snack que lleva junto."
             />
@@ -65,6 +67,7 @@ export default function Itens() {
 
           <div data-itens-card>
             <Card
+              src="/images/clean.png"
               title="Higiene y Sanitarios"
               description="Arenas, tapetes y granulados que generan recompra continua. Un producto que no depende de promociones: el cliente siempre vuelve a buscarlo."
             />
@@ -74,6 +77,7 @@ export default function Itens() {
         <div className="mt-6 flex flex-col items-center justify-center gap-6 md:mt-8 md:flex-row md:items-stretch md:gap-8">
           <div data-itens-card className="w-full md:w-auto">
             <Card
+              src="/images/acessorios1.png"
               title="Accesorios"
               description="Comederos, bandejas, palitas y contenedores prácticos para el día a día. Productos de alta rotación que complementan cada venta de alimento."
             />
@@ -81,6 +85,7 @@ export default function Itens() {
 
           <div data-itens-card className="w-full md:w-auto">
             <Card
+              src="/images/juguetes.png"
               title="Juguetes"
               description="Juguetes duraderos y atractivos que convierten una compra básica en una compra emocional. Ideal para impulsar ventas rápidas y mejorar tu margen."
             />

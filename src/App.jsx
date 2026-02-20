@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Itens from "./components/Itens";
 import Orders from "./components/Orders";
+import Portifolio from "./components/Portifolio";
 
 function App() {
   useEffect(() => {
@@ -29,8 +30,8 @@ function App() {
     <main>
       <Hero />
       <Itens />
+      <Portifolio />
       <Orders />
-
       <Footer />
     </main>
   );
